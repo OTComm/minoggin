@@ -1,0 +1,43 @@
+/* @page imposes dimensions onto the viewing area. The property :left or :right applies to even and odd pages respectively. @page wide is a4 in landscape. */
+@page {
+    size: 8.5in 11in;
+    margin: 1in;
+}
+title { 
+    height: 2in;
+    padding: 10px;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 10vw; /* "vw" means view width */
+    z-index:1000;
+    box-sizing: border-box;
+    font-family:arial, helvetica, sans-serif;
+    color: white;
+    text-align: left;
+    }
+body{
+    position: relative;
+}
+p {
+     color: black;
+     text-align:left;
+ }
+ 
+ keyword {
+     font-style:oblique;
+ }
+ 
+ ul {
+     color: red;
+     text-align:left;
+ }
+/*  
+ * This is here to show that an id in DITA can be styled using the CSS ID Selector
+    #types_of_truth {
+     color:orange;
+     background-color: blue;
+ }
+*/ 
+/* Child selector... Combinator selector... for example: body > p targets paragraphs that are inside the body. or margin > keyword targets keywords that are in the margin. */

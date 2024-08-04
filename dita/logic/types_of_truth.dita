@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="types_of_truth">
+    <title>Types of Truth</title>
+    <body>
+        <section>
+        <p><keyword>Semantic</keyword></p>
+        <ul id="ul_lzn_c2g_wbc">
+            <li>Analytic</li>
+            <li>Synthetic</li>
+        </ul>
+        <p><keyword>Epistemic</keyword></p>
+        <ul id="ul_uc5_h2g_wbc">
+            <li>A Posteriori</li>
+            <li>A Priori</li>
+        </ul>
+        <p><keyword>Metaphysical</keyword></p>
+        <ul id="ul_cbm_k2g_wbc">
+                <li>Necessary</li>
+                <li>Contingent</li>
+            </ul>
+        </section>
+    </body>
+</topic>

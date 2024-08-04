@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="types_of_logic">
+    <title>Types of Logic</title>
+    <shortdesc>An overview and examples of different types of logic, including propositional logic, predicate logic, and modal logic.</shortdesc>
+    <conbody>
+        <section>
+            <title>Introduction</title>
+            <p>Logic is central to the process of reasoning. We use logic to help us form, evaluate,
+                and draw conclusions about <keyword>arguments</keyword>. There are several
+                types of logic, each with its own purposes and applications. I will briefly
+                cover three types of logic: <ul>
+                    <li>Propositional Logic</li>
+                    <li>Predicate Logic</li>
+                    <li>Modal Logic</li>
+                </ul></p>
+        </section>
+<!-- BREAK -->
+        <section>
+            <title>Propositional Logic</title>
+            <!-- EDIT I dont like "deals with" and "dealing with" -->
+            <p>Propositonal logic (aka Sentential Logic) *deals with* propositions and the relationship between propositions.
+            In propsitional logic, we translate natural lause operators and sentence symbols to translate</p>
+        </section>
+        <example>
+            <ol>
+            <li>The dog is red and brown.
+                <p>r = The dog is red. b = The dog is brown.</p>r ∧ b </li>
+            <li>All dogs are either mammals or animals.
+            <p> m = all dogs are mammals. a = all dogs are animals.</p>
+            m ∨ a </li></ol></example>
+<!-- BREAK -->
+        <section>
+            <title>Predicate Logic</title>
+            <p>Predicate logic (aka Predicate Calculus) expands on propositional logic by *dealing with* predicates and quantifiers. </p>
+        </section>
+        <example> Examples
+            <ol>
+                <li>The dog is red and brown.
+                    <p>R = is red, B = is brown, d = the dog</p>
+                    Rd ∧ Bd <p>Read: "The dog is red, and the dog is brown."</p></li>
+                <li>The dog is red and brown. 
+                    <p>R = is red, B = is brown, D = is a dog</p>
+                    ∃x (Dx ∧
+                    (Rx ∧ Bx)) <p>Read: "There exists some x, such that x is a dog, and x is red,
+                        and x is brown."</p></li>
+                <li>All dogs are mammals. <p> M = is a mammal, D = is a dog</p> ∀x (Dx ⊃ Mx)<p>Read:
+                        "For all things that exist, if x is a dog, then x is a mammal or x is an
+                        animal." You may wonder where how we can get away with adding the
+                        conditional words "if" and "then." The reason for the conditional will be
+                        explained later.</p></li></ol></example>
+        <!-- BREAK -->
+        <section>
+            <title>Modal Logic</title>
+        </section>
+        <example> Examples
+            <ol>
+                <li>If Helga might bring her dog, then Hans will definitly stay home.
+                    <p>D = Helga might bring her dog, S = Hans will definitely stay home</p>
+                    ∀x (◇ Px ⊃ □ (Ph ⊃ Ch))
+                    <p>Read: "If it is possible that Helga will bring her dog, that Hans will necessarily stay home."</p></li>
+                <li>Of all the people who might be at the party, Herman would definitely be the coolest.
+                    <p>D = Helga might bring her dog, S = Hans will definitely stay home</p>
+                    ◇D ⊃ □S
+                    <p>Read: "If it is possible that Helga will bring her dog, that Hans will necessarily stay home."</p></li></ol></example>
+        
+        <!-- <section>
+            <title></title>
+        </section>
+        <example></example> -->
+        
+    </conbody>
+</concept>
+
+<!-- 
+    ¬ negation
+    ∧ conjunction
+    ∨ disjunction
+    ⊃ conditional (i.e.,implication or material implication)
+    ≡ bi-conditional (i.e., necessary and sufficient condition, logical equivalance, iff (if and only if)) 
+    ∃ existential quantifier
+    ∀ universal quantifier
+    ◇ possible
+    □ necessary
+-->

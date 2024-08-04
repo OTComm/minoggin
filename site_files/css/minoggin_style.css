@@ -1,0 +1,295 @@
+@charset "UTF-8";
+/* CSS Document */
+/*Brand colors minog-test2:
+yellow: #C8B91E
+white: #F4F7FF
+blue: #060A47
+green: #8F894B
+red: #740101
+salmon: #C14A3B
+*/
+/*---------------------------
+Universal COLORS for var()
+-----------------------------*/
+:root {
+	--uni-test: red;
+	--uni-black: black;
+	--uni-white: white;
+	--uni-link-hov: red;
+	--uni-link-vis: purple;
+	--uni-bg-light: rgba(248,249,250,1); /*Bootstrap light background color*/
+	--jnd-light: pink;
+	--uni-bg-dark: rgba(33,34,36,1.00);
+	--jnd-dark: rgba(57,59,64,1.00);
+	--grammar-main: #DDCF4F;
+	--grammar-accent: #43586E;
+	--phil-main: #DEB52C;
+	--phil-accent: #2E3B70;
+	--music-main: #70B1B3;
+	--music-accent: #4E4C5E;
+	--minoggin-logo: url("../images/branding/minoggin_logo-bw.svg"); /*NOTE: Update index.html nav logo to match*/
+}
+/*---------------------------
+Basic Component Controls
+-----------------------------*/
+html, body {
+margin: 0;
+padding: 0;
+width: 100%;
+height: 100%;
+overflow: auto;
+font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+}
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	background-color: var(--uni-test);
+}
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+	max-height: 20px;
+}
+footer {
+	text-align: center;
+	font-size: 12px;
+	color: var(--jnd-dark);
+	padding: 2px;
+}
+/*-------------------------
+Main Area (of index.html)
+---------------------------*/
+main {
+	background-color: var(--uni-bg-dark);
+	flex: 1;
+	overflow-y: auto; /* allows vert scrolling */
+	padding: 20px;
+	color: var(--uni-white);
+	/* flex-grow: 1; is redundant, becuase flex:1 is shorthand for all of these: flex-grow: 1, flex-shrink: 1; , and flex-basis: 0, all of which make it so that the element to which it is assigned fills all of the space left over relative to the to other elements */
+}
+/*-------------------------
+Home Page Image
+---------------------------*/
+.main-image {
+	margin: 1.5em;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	height:75vh;
+}
+.minoggin-logo {
+	background-image: var(--minoggin-logo);
+}
+/*-------------------------
+Bootstap Nav
+---------------------------*/
+.container-fluid {
+	display: flex;
+	flex: 1;
+	/*overflow: hidden;*/
+	padding-left: 30px;
+	padding-right: 30px;
+}
+nav {
+	background-color: var(--uni-test);
+	width: auto;
+	flex-shrink: 0;
+}
+/*-------------------------
+BREAD CRUMBS
+---------------------------*/
+ul.breadcrumb {
+	padding: 0px 16px;
+	list-style: none;
+	background-color: none;
+}
+ul.breadcrumb li {
+	display: inline;
+	font-size: 14px;
+}
+ul.breadcrumb li+li:before {
+	padding: 2px;
+	color: var(--uni-white);
+	content: "/\00a0";
+}
+ul.breadcrumb li a {
+	color: whitesmoke;
+	text-decoration: none;
+	border: 1px solid transparent;
+	border-radius: 5px;
+	padding: 1px 8px;
+	display: inline-block;
+}
+ul.breadcrumb li.writ a:hover {
+	background-color: var(--grammar-main);
+	color: black;
+}
+ul.breadcrumb li.phil a:hover {
+	background-color: var(--phil-main);
+	color: var(--uni-black);
+}
+.box-word {
+	border: 1px solid transparent;
+	border-radius: 5px;
+	padding: 1px 8px;
+	display: inline-block;
+}
+.box-word.grammar {
+	background-color: var(--grammar-main);
+	color: var(--uni-black);
+}
+/*--------------------------------
+Styling for DITA Topics 
+----------------------------------*/
+.conbody {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+/*H1*/
+.topictitle1 {
+	/*padding: 6px;
+	padding-top: 24px;*/
+	/*color: rgba(223,212,26,1.00);*/
+	color: var(--grammar-main);
+	font-size: 3.0em; 
+	margin: 0.5em 0em 0em 0em;
+}
+hr {
+	color: var(--uni-white);
+}
+.summary {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 95%;
+}
+/*---------------------------------------------------------------------------
+NOTE: .section class covers the h2 sections in the Markup > DITA > HTML files
+-----------------------------------------------------------------------------*/
+.section {
+	background-color: none;
+	padding: 6px;  /* uniform padding */
+	width: 90%;
+    margin: 30px auto;   /* centered horizontally */
+}
+/*.conbody h2{
+	color: var(--uni-white);
+}*/
+.detailsec h2 {
+	color: var(--uni-black);
+}
+/* .sectiontitle = ## (md) and h2 (html) */
+.sectiontitle {
+	font-size: 1.8em;
+}
+/*-----------------------------------
+START: Div {[Explanation] [Examples]} 
+------------------------------------*/
+.detailsec {
+	background-color: var(--uni-bg-light);
+	padding: 6px 20px 6px 20px;
+	border-radius: 12px 12px 0px 0px;
+	width: 85%;
+}
+.detailsec{
+	color: var(--uni-black);
+}
+/*--------------------------*/
+.examples {
+	padding-left: 16px;
+	border-radius: 8px;
+	background-color: var(--uni-white);
+	border-style: ridge;
+	border-width: 1px;
+	border-color: var(--uni-white);
+	color: var(--uni-black);
+}
+/*-----------------------
+START Related Topic Links
+-------------------------*/ 
+.related-topics {
+	/*background-color: red;*/
+	border-radius: 0px 0px 12px 12px;
+	width: 85%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: top;
+	color: var(--uni-dark);
+	text-align: center
+}
+.related-topics h2 {
+	color: var(--uni-black);
+}
+.related-topics hr {
+	color: var(--uni-black);
+}
+.related-topics a:link {
+	color: var(--uni-black);
+	text-decoration: none;
+}
+.related-topics a:hover {
+	color: var(--uni-white);
+	text-decoration: none;
+}
+.related-topics a:visited {
+	color: var(--uni-link-vis);
+	text-decoration: none;
+}
+/*---- Inside first-topic-links----*/
+.first-topic-links, .second-topic-links, .third-topic-links {
+	display: flex;
+	min-width: 33.33%;
+}
+.first-topic-links {
+	border-bottom-left-radius: 12px;
+}
+.third-topic-links {
+	border-bottom-right-radius: 12px;
+}
+/*----BACKGROUND COLORS----*/
+.uni-bg-dark {
+	background-color: var(--uni-bg-dark);
+}
+.grammar{
+	background-color: var(--grammar-main);
+}
+.grammar-accent {
+	background-color: var(--grammar-accent);
+}
+.philosophy{
+	background-color: var(--phil-main);
+}
+.philosophy-accent{
+	background-color: var(--phil-accent);
+}
+.music {
+	background-color: var(--music-main);
+}
+.music-accent {
+	background-color: var(--music-accent);
+}
+.test-color {
+	background-color: var(--uni-test);
+}
+/*--------------
+ADAPTIVE Queries
+----------------*/
+@media (max-width: 900px) {
+	.related-topics {
+		flex-direction: column;
+		padding: 0px;
+	}
+	.first-topic-links,.second-topic-links {
+		min-width: 100%;
+		border-radius: 0px
+	}
+	.third-topic-links {
+		min-width: 100%;
+		border-radius: 0px 0px 12px 12px;
+	}

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="logical_truth_and_falsity">
+    <title>Logical Truth</title>
+    <shortdesc></shortdesc>
+    <conbody>
+        <p>Logical truth: A sentence is logically true iff it is not possible for it to be
+            false.</p>
+        <p>Logical falsity: A sentence is logically false iff it is not possible for it to be
+            true.</p>
+        <p>Logical Indeterminacy: A sentence is logically indeterminate iff it is nether logically
+            true nor logically false.</p>
+        <p>Logical equivalency: Two sentences are logically equivalent iff it is not possible for
+            one to be true and the other false. </p>
+        <p/>
+        <p>A set of sentences is consistent iff all of the sentences in that set are true.</p>
+        <p/>
+        <p>True sentences have a truth-value of T. This is distinct from “truth functionally
+            true"</p>
+        <p>False sentences have a truth-value of F. This is distinct from “truth functionally
+            false”</p>
+        <p/>
+        <p>Sentences that are neither true nor false do not have a truth value, but this is not the
+            same as sentences that are “truth functionally indeterminate”</p>
+        <p>The inability to know whether a sentence is T or F does not change that it is T or F</p>
+        <p>Every sentence that has a truth value is either logically true or logically false.</p>
+        <p>Not all sentences are either logically true or logically false.</p>
+        <p>For example: Joseph cared for the children of Heinrich. Heinrich's children were cared
+            for by Joseph. It is not possible for one to be true while the other is false; we could
+            replace one with the other and the meaning would not be changed. </p>
+        <p>Every sentence is identical with itself. This seems simple and obvious enough, but keep
+            this in mind; it will be helpful later.</p>
+    </conbody>
+</concept>

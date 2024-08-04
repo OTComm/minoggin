@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 162 162.6">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #deb52c;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        stroke: #000;
+        stroke-miterlimit: 10;
+        stroke-width: 14px;
+      }
+
+      .cls-2 {
+        fill: #70b1b3;
+      }
+
+      .cls-3 {
+        fill: none;
+      }
+
+      .cls-4 {
+        fill: #ddcf4f;
+      }
+    </style>
+  </defs>
+  <path class="cls-4" d="M117.2,152.6c-19.9,0-36-16.1-36-36V44.6c0-19.9-16.1-36-36-36S9.2,24.8,9.2,44.6v72c0,19.9,16.1,36,36,36h72"/>
+  <path class="cls-3" d="M117.2,152.6c19.9,0,36-16.1,36-36V44.6"/>
+  <circle class="cls-2" cx="117.2" cy="44.6" r="36"/>
+  <path class="cls-1" d="M117.2,152.6c-19.9,0-36-16.1-36-36s16.1-36,36-36,36,16.1,36,36-16.1,36-36,36"/>
+</svg>

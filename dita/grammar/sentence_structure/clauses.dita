@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="clauses">
+    <title>Clauses</title>
+    <shortdesc>A clause is a group of words that contains both a subject and a verb.</shortdesc>
+    <conbody>
+        <ol>
+            <li>It offers {more power}.</li>
+            <li>It is always them, {every single time}.</li>
+            <li>She hid {under the table}.</li>
+            <li>He ran.</li>
+        </ol>
+    </conbody>
+</concept>

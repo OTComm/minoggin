@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="sentences">
+    <title>Sentences</title>
+    <conbody>
+        <section>
+            <title>Summary</title>
+        <p>A sentence is a group of words that contains a Subject and a verb and that expresses a complete thought. You can think of a sentence as functioning like this:
+            Some Noun does some verb or is some other Noun.</p>
+        </section>
+        <section>
+            <title>Child Topics</title>
+            <ol>
+                <li><xref href="simple_sentences.dita"></xref>Simple Sentences</li>
+                <li>Compound Sentences</li>
+                <li>Complex Sentences</li>
+                <li>Compound-Complex Sentences</li>
+            </ol>
+        </section>
+    </conbody>
+</concept>

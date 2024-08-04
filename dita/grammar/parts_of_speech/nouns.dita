@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="nouns_Topic">
+    <title>Nouns</title>
+    <conbody>
+        <section id="nouns_Summary">
+            <title>Summary</title>
+            <p>Nouns name people, places, things, and ideas.</p>
+        </section>
+        <section id="nouns_Explanation">
+            <title>Explanation</title>
+            <p>We only speak or write about people, places, things, and ideas. Everything that
+                exists, has existed, or could conceptually exist, is named through the mysterious
+                function of nouns.</p>
+            <p>Nouns can serve as <xref href="subjects.dita">Subjects</xref>or<xref href="objects.dita">Objects</xref>in<xref href="sentences.dita">Sentences</xref>, or <xref href="complements.dita">Complements</xref>
+                that complete the meaning of another noun or adjective.</p>
+        </section>
+        <section id="nouns_Child_Topics">
+            <title>Topics</title>
+            <p><xref href="common_nouns.dita">Common Nouns</xref></p>
+            <p><xref href="proper_nouns.dita">Proper Nouns</xref></p>
+            <p><xref href="concrete_nouns.dita">Concrete Nouns</xref></p>
+            <p><xref href="abstract_nouns.dita">Abstract Nouns</xref></p>
+            <p><xref href="gerunds.dita">Gerunds</xref></p>
+            <p><xref href="compound_nouns.dita">Compound Nouns</xref></p>
+        </section>
+        <!-- <section id="nouns_Related_Topics">
+            <title>Related Topics</title>
+            <p> <xref href="predicate_nouns.dita">Predicate Nouns</xref> | <xref href="objects_and_complements.dita">Objects and Complements</xref> | <xref href="subjects.dita">Subjects</xref> | <xref href="adjectives.dita">Adjectives</xref> </p>
+        </section> -->
+        <section id="nouns_Sibling_Topics">
+            <title>Sibling Topics</title>
+            <p>Nouns |<xref href="pronouns.dita">Pronouns</xref> | <xref href="verbs.dita">Verbs</xref> | <xref href="adverbs.dita">Adverbs</xref> | <xref href="adjectives.dita">Adjectives</xref> | <xref href="prepositions.dita">Prepositions</xref> |
+                <xref href="conjunctions.dita">Conjunctions</xref> | <xref href="interjections.dita">Interjections</xref> | <xref href="determiners.dita">Determiners</xref></p>
+        </section>
+    </conbody>
+</concept>

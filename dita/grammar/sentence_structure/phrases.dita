@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="phrases">
+    <title>Phrases</title>
+    <shortdesc>A phrase is group of words that contains either a subject or a verb but not both.</shortdesc>
+    <conbody>
+        <ol>
+            <li>More power.</li>
+            <li>Every single time.</li>
+            <li>Under the table.</li>
+        </ol>
+    </conbody>
+</concept>

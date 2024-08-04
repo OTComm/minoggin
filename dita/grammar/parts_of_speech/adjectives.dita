@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="adjectives-topic" outputclass="topic-title">
+    <title>Adjectives</title>
+    <conbody>
+        <section id="summary" outputclass="summary">
+            <title>Summary</title>
+            <p>Adjectives tell us more information about nouns and pronouns.</p>
+        </section>
+        <section id="explanation" outputclass="explanation">
+            <title>Explanation</title>
+            <p>There are words that are categorically always possessive adjectives they function exclusively to denote possession or ownership of other nouns; that is, there are some words that are categorically possessive adjectives, their only function is to modify other nouns by mapping that noun to a possessor noun. Many other types of words can function as adjectives without changing their grammatical category. For example, when a proper nouns used descriptively. </p>
+        </section>
+        <section id="examples" outputclass="examples">
+            <title>Examples</title>
+            <ol>
+                <li>{Her} sweater was lost.</li>
+                <li>The {red} apples were sold out.</li>
+                <li>{Those} birds are not real. </li>
+                <li>She left him {four} cookies</li>
+            </ol>
+        </section>
+        <section id="child-topics" outputclass="child-topics">
+            <title>Topics</title>
+            <p><xref href="descriptive_adjectives.dita">Descriptive Adjectives</xref></p>
+            <p><xref href="possiessive_adjectives.dita">Possessive Adjectives</xref></p>
+            <p><xref href="demonstrative_adjectives.dita">Demonstrative Adjectives</xref></p>
+            <p><xref href="quantitative_adjectives.dita">Quantitative Adjectives</xref></p>
+            <p><xref href="distributive_adjectives.dita">Dsistributive Adjectives</xref></p>
+            <p><xref href="compound_adjectives.dita">Compound Adjectives</xref></p>
+        </section>
+        <section id="adjectives-sibling-topics">
+            <title>Sibling Topics</title>
+            <p><xref href="nouns.dita">Nouns</xref> |<xref href="pronouns.dita">Pronouns</xref> | <xref href="verbs.dita">Verbs</xref> | <xref href="adverbs.dita">Adverbs</xref> | <xref href="adjectives.dita">Adjectives</xref> | <xref href="prepositions.dita">Prepositions</xref> |
+                <xref href="conjunctions.dita">Conjunctions</xref> | <xref href="interjections.dita">Interjections</xref> | <xref href="determiners.dita">Determiners</xref></p>
+        </section>
+    </conbody>
+</concept>

@@ -1,0 +1,371 @@
+@charset "UTF-8";
+/* CSS Document */
+/*Brand colors minog-test2:
+yellow: #C8B91E
+white: #F4F7FF
+blue: #060A47
+green: #8F894B
+red: #740101
+salmon: #C14A3B
+*/
+
+html, body {
+margin: 0;
+padding: 0;
+width: 100%;
+height: 100%;
+overflow: auto;
+font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+}
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	background-color: red;
+}
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+	max-height: 20px;
+}
+header, footer {
+	background-color: rgba(33,34,36,1.00);
+	color: rgba(248,249,250,1);
+}
+footer {
+	/*background-color: slategray;*/
+	text-align: center;
+	font-size: 12px;
+	color:rgba(57,59,64,1.00) ;
+	padding: 2px;
+}
+/*
+--------------------------
+START BREAD CRUMBS
+---------------------------
+*/
+ul.breadcrumb {
+	padding: 0px 16px;
+	list-style: none;
+	background-color: none;
+}
+ul.breadcrumb li {
+	display: inline;
+	font-size: 14px;
+}
+ul.breadcrumb li+li:before {
+	padding: 2px;
+	color: whitesmoke;
+	content: "/\00a0";
+}
+ul.breadcrumb li a {
+	color: whitesmoke;
+	text-decoration: none;
+	border: 1px solid transparent;
+	border-radius: 5px;
+	padding: 1px 8px;
+	display: inline-block;
+}
+ul.breadcrumb li.writ a:hover {
+	/*border: 1px solid #FFFFFF;
+	border-radius: 5px;*/
+	background-color: rgba(223,212,26,0.80);
+	/*padding: 1px 8px;
+	display: inline-block;*/
+	color: black;
+}
+ul.breadcrumb li.phil a:hover {
+	/*border: 1px solid #FFFFFF;
+	border-radius: 5px;*/
+	background-color: orange;
+	/*padding: 1px 8px;
+	display: inline-block;*/
+	color: black;
+}
+.box-word {
+	border: 1px solid transparent;
+	border-radius: 5px;
+	background-color: rgba(223,212,26,0.80);
+	padding: 1px 8px;
+	display: inline-block;
+	color: black;
+}
+/*
+--------------------------
+*/
+/*
+--------------------------
+START Bootstap Nav
+---------------------------
+*/
+.container-fluid {
+	display: flex;
+	flex: 1;
+	/*overflow: hidden;*/
+	padding-left: 30px;
+	padding-right: 30px;
+}
+nav {
+	background-color: green;
+	width: auto;
+	flex-shrink: 0;
+}
+/*
+--------------------------
+*/
+
+/*
+--------------------------
+START Main Area
+---------------------------
+*/
+main {
+	background-color:rgba(33,34,36,1.00);
+	flex: 1;
+	/* flex-grow: 1; is redundant, becuase flex:1 is shorthand for all of these: flex-grow: 1, flex-shrink: 1; , and flex-basis: 0, all of which make it so that the element to which it is assigned fills all of the space left over relative to the to other elements */
+	overflow-y: auto; /* allows vert scrolling */
+	padding: 20px;
+	color: whitesmoke;
+}
+/*
+--------------------------
+*/
+
+/*
+--------------------------
+START home page = minoggin-home.html
+---------------------------
+*/
+.main-image {
+	margin: 1.5em;
+	background-image:url("../images/branding/minoggin_logo2.svg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	height:75vh;
+}
+#main-page-text {
+	padding: 0 12px;
+	/*background-color: rgba(255,255,255,0.20);*/
+	height: 100%;
+	width: 100%;
+	/*align-content: center;*/
+	text-align: left;
+	font-size: 1em;
+	color: whitesmoke;
+}
+#main-page-text h3 {
+	font-size: 1.8em;
+}
+/*
+--------------------------
+*/
+
+/*
+--------------------------
+START Topic Styling for DITA Pages 
+---------------------------
+*/
+.conbody {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+/* MAYBE LATER: IDEA IS TO HAVE THE TITLE STICK TO THE TOP. I think this would be better for V2 left nav or off-canvas nav.
+.sticky-title {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 1000%;
+	background-color: blue;
+}*/
+/*Tile Size */
+.topictitle1 {
+	/*padding: 6px;
+	padding-top: 24px;*/
+	/*color: rgba(223,212,26,1.00);*/
+	color: #C8B91E;
+	font-size: 3.0em; 
+	margin: 0.5em 0em 0em 0em;
+}
+hr {
+	color: white;
+}
+.summary {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 95%;
+}
+/*
+--------------------------
+*/
+/*
+--------------------------
+NOTE: .section class covers the h2 sections in the Markup > DITA > HTML files
+---------------------------
+*/
+.section {
+	background-color: none;
+	padding: 6px;  /* uniform padding */
+	width: 90%;
+    margin: 30px auto;   /* centered horizontally */
+}
+.conbody h2{
+	color: white;
+}
+/* .sectiontitle = ## (md) and h2 (html) */
+.sectiontitle {
+	font-size: 1.8em;
+}
+/*
+--------------------------
+START: Div {[Explanation] [Examples]} 
+---------------------------
+*/
+.detailsec {
+	background-color: whitesmoke;
+	padding: 6px 20px 6px 20px;
+	border-radius: 12px 12px 0px 0px;
+	width: 85%;
+}
+.detailsec h2 {
+	color: black;
+}
+.detailsec p {
+	color: black;
+}
+/*
+--------------------------
+*/
+.examples {
+	padding-left: 16px;
+	border-radius: 8px;
+	background-color: white;
+	border-style: ridge;
+	border-width: 1px;
+	border-color: white;
+	color: black;
+}
+/*
+----------------
+Tool Tip Baloons
+----------------
+.tooltip {
+  position: relative;
+  cursor: pointer;
+}
+
+.tooltip:hover .tooltip-content,
+.tooltip:active .tooltip-content {
+  visibility: visible;
+  opacity: 1;
+}
+
+.tooltip-content {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.5s, visibility 0.5s;
+}
+*/
+/*
+--------------------------
+*/
+/*
+--------------------------
+START Child Topic Links
+---------------------------
+*/ 
+/*update this and the subsection so that each of the three main topic areas has its own settings while global ones are... global*/
+.related-topics {
+	/*background-color: red;*/
+	border-radius: 0px 0px 12px 12px;
+	width: 85%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: top;
+	color: black;
+	text-align: center
+}
+.related-topics h2 {
+	color: black;
+}
+.related-topics a:link {
+	color: black;
+	text-decoration: none;
+}
+.related-topics a:hover {
+	color:purple;
+	text-decoration: none;
+}
+.related-topics a:visited {
+	color: gray;
+	text-decoration: none;
+}
+/*---- Inside first-topic-links----*/
+.first-topic-links, .second-topic-links, .third-topic-links-links, .related-phil-topics {
+	display: flex;
+	min-width: 33.33%;
+}
+.first-topic-links {
+	background-color: #C8B91E;
+	border-bottom-left-radius: 12px;
+}
+.second-topic-links {
+	background-color: #8F894B;
+}
+.third-topic-links-links {
+	background-color: none;
+	border-bottom-right-radius: 12px;
+}
+/* Phil Style */
+.related-phil-topics {
+	background-color: #C14A3B;
+	border-bottom-right-radius: 12px;
+}
+/* ADAPTIVE Queries */
+@media (max-width: 900px) {
+	.related-topics {
+		flex-direction: column;
+		padding: 0px;
+	}
+	.first-topic-links,.second-topic-links, .third-topic-links-links {
+		min-width: 100%;
+		border-radius: 0px
+	}
+	.related-phil-topics {
+		min-width: 100%;
+		border-radius: 0px 0px 12px 12px;
+	}
+	/*Possible solution to possible problem: If the third link box will sometimes be assigned to another topic type, like to music from phil, when I may need to do something like:(without the space)div.third-topic-links #music ... the idea is that in the HTML I would assign both a class and an id to each of the three sections; this way the layout is handled universally via class, and in this case the css without the space will only taret the div with the class .third topic, then the #id would target the id in the third topic... so <div class="third-topic-links" id="music"> should do layout for all "third topic" while the id "music" "phil" etc would handle coloring.
+} 
+
+/*#first-topic-links{
+	padding: 0px 20px 6px 20px;
+	background-color:rgba(223,212,26,1.00);
+	border-radius: 0px 0px 12px 12px;
+	margin: 30px auto;
+}*/
+/*
+--------------------------
+/*
+--------------------------
+Useful Info
+---------------------------
+BStrap bg light color = rgba(248,249,250,1);
+*/

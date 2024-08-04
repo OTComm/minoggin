@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="types_of_sentences">
+    <title>Types of Sentences</title>
+    <body>
+        <p>Most but not all sentences are either true or false.</p>
+        <p>All of the following sentences are either true or false:</p>
+        <ul id="ul_l5w_lyf_wbc">
+            <li>Canada is in South America.</li>
+            <li>
+                <p>It was raining on July 6, 79 BC in what is now known as Minneapolis, MN.</p>
+            </li>
+        </ul> 
+                <p> All of the following sentences are neither true nor false.</p>
+        <ul id="ul_sjg_d1g_wbc">
+            <li>Do I have to learn this? </li>
+            <li>Call me later.</li>
+            <li>Woohoo!</li>
+        </ul>
+        <p>Questions, commands, and exclamations do not have truth value.</p>
+    </body>
+</topic>
