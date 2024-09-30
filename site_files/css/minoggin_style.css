@@ -83,7 +83,9 @@ Home Page Image
 	justify-content: center; /*horizontal align */
 	align-items: center; /*vertical align*/
 	/*background-position: center; background-repeat: no-repeat; background-size: contain;*/
-	height:75vh;
+	/*height:75vh;*/
+	height: auto; /* Adjust to let content dictate height */
+    min-height: 75vh; /* Ensure a minimum height */
 }
 .minoggin-logo {
 	background-image: var(--minoggin-logo);
@@ -92,16 +94,24 @@ Home Page Image
 	background-size: contain;
 }
 .centered-div {
+	/*ORIGINALLY:
 	min-height: 40vh;
 	min-width: 100vw;
 	padding: 0px 20vw 0 20vw;
 	display: flex;
-	justify-content: center; /*horizontal align */
-	align-items: center; /*vertical align*/
+	justify-content: center; */ /*horizontal align */
+	/*align-items: center; /*vertical align*/
+	width: 100%;
+    padding: 0 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .centered-div.welcome-mssg {
 	background-color: var(--uni-bg-light-10);
 	color: var(--uni-white);
+	padding: 20px; /* Add padding for better spacing */
 }
 /*-------------------------
 Bootstap Nav
