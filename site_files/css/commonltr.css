@@ -297,7 +297,7 @@ div.imagejustify {
 
 /* Set heading sizes, getting smaller for deeper nesting */
 /* UPDATE .topictileX SIZES TO MATCH MAIN CSS on XFORM
-.topictitle1 {
+.grammar_topictitle1 {
   font-size: 1.34em;
   margin-bottom: 0.1em;
   margin-top: 0;
@@ -665,7 +665,7 @@ table .desc {
 .examples {
 	background-color: orange;
 }
-.topictitle1 {
+.grammar_topictitle1 {
 	padding: 6px;
 	padding-top: 24px;
 }

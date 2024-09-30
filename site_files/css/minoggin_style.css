@@ -15,9 +15,13 @@ Universal COLORS for var()
 	--uni-test: red;
 	--uni-black: black;
 	--uni-white: white;
-	--uni-link-hov: red;
+	--uni-link-hov: #DDCF4F;
 	--uni-link-vis: purple;
 	--uni-bg-light: rgba(248,249,250,1); /*Bootstrap light background color*/
+	--uni-bg-light-10: rgba(248,249,250,.1); /*Bootstrap light background color*/
+	--uni-bg-light-20: rgba(248,249,250,.2); /*Bootstrap light background color*/
+	--uni-bg-light-50: rgba(248,249,250,.5); /*Bootstrap light background color*/
+	--uni-bg-light-80: rgba(248,249,250,.8); /*Bootstrap light background color*/
 	--jnd-light: pink;
 	--uni-bg-dark: rgba(33,34,36,1.00);
 	--jnd-dark: rgba(57,59,64,1.00);
@@ -75,13 +79,29 @@ Home Page Image
 ---------------------------*/
 .main-image {
 	margin: 1.5em;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: contain;
+	display: flex;
+	justify-content: center; /*horizontal align */
+	align-items: center; /*vertical align*/
+	/*background-position: center; background-repeat: no-repeat; background-size: contain;*/
 	height:75vh;
 }
 .minoggin-logo {
 	background-image: var(--minoggin-logo);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+.centered-div {
+	min-height: 40vh;
+	min-width: 100vw;
+	padding: 0px 20vw 0 20vw;
+	display: flex;
+	justify-content: center; /*horizontal align */
+	align-items: center; /*vertical align*/
+}
+.centered-div.welcome-mssg {
+	background-color: var(--uni-bg-light-10);
+	color: var(--uni-white);
 }
 /*-------------------------
 Bootstap Nav
@@ -141,6 +161,10 @@ ul.breadcrumb li.phil a:hover {
 	background-color: var(--grammar-main);
 	color: var(--uni-black);
 }
+.box-word.phil {
+	background-color: var(--phil-main);
+	color: var(--uni-black);
+}
 /*--------------------------------
 Styling for DITA Topics 
 ----------------------------------*/
@@ -151,11 +175,27 @@ Styling for DITA Topics
 	align-items: center;
 }
 /*H1*/
-.topictitle1 {
+.grammar_topictitle1 {
 	/*padding: 6px;
 	padding-top: 24px;*/
 	/*color: rgba(223,212,26,1.00);*/
 	color: var(--grammar-main);
+	font-size: 3.0em; 
+	margin: 0.5em 0em 0em 0em;
+}
+.grammar_topictitle2 {
+	/*padding: 6px;
+	padding-top: 24px;*/
+	/*color: rgba(223,212,26,1.00);*/
+	color: var(--grammar-accent);
+	font-size: 3.0em; 
+	margin: 0.5em 0em 0em 0em;
+}
+.philosophy_topictitle1 {
+	/*padding: 6px;
+	padding-top: 24px;*/
+	/*color: rgba(223,212,26,1.00);*/
+	color: var(--phil-main);
 	font-size: 3.0em; 
 	margin: 0.5em 0em 0em 0em;
 }
@@ -167,6 +207,16 @@ hr {
 	flex-direction: column;
 	justify-content: center;
 	width: 95%;
+}
+.p a {
+	color: inherit;
+	text-decoration: none;
+}
+.p a:hover {
+	color: var(--uni-link-hov);
+}
+.p a:visited {
+	color: var(--uni-link-vis);
 }
 /*---------------------------------------------------------------------------
 NOTE: .section class covers the h2 sections in the Markup > DITA > HTML files
@@ -186,6 +236,9 @@ NOTE: .section class covers the h2 sections in the Markup > DITA > HTML files
 /* .sectiontitle = ## (md) and h2 (html) */
 .sectiontitle {
 	font-size: 1.8em;
+}
+.subsectiontitle {
+	font-size: 1.3em;
 }
 /*-----------------------------------
 START: Div {[Explanation] [Examples]} 
@@ -240,6 +293,22 @@ START Related Topic Links
 .related-topics a:visited {
 	color: var(--uni-link-vis);
 	text-decoration: none;
+}
+/*----ACCENT Color Text----*/
+.related-topics .grammar-accent h2, .related-topics .music-accent h2, .related-topics .philosophy-accent h2 {
+    color: var(--uni-bg-light);
+}
+.related-topics .grammar-accent hr, .related-topics .music-accent hr, .related-topics .philosophy-accent hr {
+    color: var(--uni-bg-light);
+}
+.related-topics .grammar-accent a:link, .music-accent a:link, .philosophy-accent a:link {
+    color: var(--uni-bg-light);
+}
+.related-topics .grammar-accent a:hover, .related-topics .music-accent a:hover, .related-topics .philosophy-accent a:hover {
+    color: var(--grammar-main);
+}
+.related-topics .grammar-accent a:visited, .related-topics .music-accent a:visited, .related-topics .philosophy-accent a:visited {
+    color: var(--grammar-main);
 }
 /*---- Inside first-topic-links----*/
 .first-topic-links, .second-topic-links, .third-topic-links {
